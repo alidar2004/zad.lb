@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Section with Cart</title>
+  <script src="appss.js"></script>
+  <link rel="stylesheet" href="item.css">
+     <!--fontawesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+</head>
+<body>
+
+  <header id="home">
+    <nav>
+        <img src="C:\Users\lenovo\Desktop\zad\img\back.png" alt="">
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li >     
+        <li><a href="index.html">الرئسية</a></li>
+        <li><a href="most.html">الاكثر شعبية</a></li>
+        <li><a href="category1.html">التصنيفات</a></li>
+        <li><a href="item.html">المنتجات</a></li>
+        <li><a href="#cart">سلة المشتريات</a></li>
+        <li><a href="contact.html">للتواصل</i></a></li>
+    
+
+      </ul>
+      <ul class="mainbar">
+        <li id="show"><a href="index.html">الرئسية</a></li>
+        <li id="show"><a href="most.html">الاكثر شعبية</a></li>
+        <li id="show"><a href="category1.html">التصنيفات</a></li>
+        <li id="show"><a href="item.html">المنتجات</a></li>
+        <li id="show"><a href="contact.html">للتواصل</a></li>
+        <li id="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#cba135"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li><a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+        
+    </nav>
+
+    
+</header>
+  
+  <!-- Item Section -->
+  <section class="item-section">
+    <h1 class="section-title">المنتجات</h1>
+    <div class="item-container">
+      <div class="item-card" data-id="1" data-name="Item 1" data-price="10">
+        <img src="img/ca1.jpg" alt="Item 1" class="item-image">
+        <h2 class="item-name">Item 1</h2>
+        <p class="item-description">This is a description of item 1.</p>
+        <p class="item-price">$10</p>
+        <button class="item-button add-to-cart">Add to Cart</button>
+      </div>
+      <div class="item-card" data-id="2" data-name="Item 2" data-price="15">
+        <img src="img/ca2.jpg" alt="Item 2" class="item-image">
+        <h2 class="item-name">Item 2</h2>
+        <p class="item-description">This is a description of item 2.</p>
+        <p class="item-price">$15</p>
+        <button class="item-button add-to-cart">اضف على البطاقة</button>
+      </div>
+      <div class="item-card" data-id="3" data-name="Item 3" data-price="20">
+        <img src="img/ca3.jpg" alt="Item 3" class="item-image">
+        <h2 class="item-name">Item 3</h2>
+        <p class="item-description">This is a description of item 3.</p>
+        <p class="item-price">$20</p>
+        <button class="item-button add-to-cart">Add to Cart</button>
+      </div>
+      <div class="item-card" data-id="3" data-name="Item 3" data-price="20">
+        <img src="img/ca1.jpg" alt="Item 3" class="item-image">
+        <h2 class="item-name">Item 3</h2>
+        <p class="item-description">This is a description of item 3.</p>
+        <p class="item-price">$20</p>
+        <button class="item-button add-to-cart">Add to Cart</button>
+      </div>
+      <div class="item-card" data-id="3" data-name="Item 3" data-price="20">
+        <img src="img/ca2.jpg" alt="Item 3" class="item-image">
+        <h2 class="item-name">Item 3</h2>
+        <p class="item-description">This is a description of item 3.</p>
+        <p class="item-price">$20</p>
+        <button class="item-button add-to-cart">Add to Cart</button>
+      </div>
+      <div class="item-card" data-id="3" data-name="Item 3" data-price="20">
+        <img src="img/ca3.jpg" alt="Item 3" class="item-image">
+        <h2 class="item-name">Item 3</h2>
+        <p class="item-description">This is a description of item 3.</p>
+        <p class="item-price">$20</p>
+        <button class="item-button add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <h2 class="cart-title">بطاقة التسوق</h2>
+      <ul class="cart-items"></ul>
+      <p class="cart-total">المجموع: $<span id="cart-total">0</span></p>
+      <button class="buy-button" id="buy-button">اشتري</button>
+    </section>
+
+  <script src="item.js"></script>
+</body>
+</html>
