@@ -14,12 +14,16 @@
  
  }
  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Harmattan:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+ 
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  h1,h2,h3{
+    font-family:'harmattan'  ;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -35,7 +39,7 @@
 
  body{
     margin: 0;
-  background-color:#EFE6D6;
+  background-color:#efe6d68f;
     
 
 
@@ -134,8 +138,9 @@ nav a:hover{
     max-width: 1000px;
     max-height: 700px;
     margin-top: 35px;
-  }
-
+   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.33);
+   border: 2px solid #007B6E;
+} 
   .swiper-slide {
   
     text-align: center;
@@ -151,7 +156,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+  
   }
 /* category start */
 
@@ -166,8 +171,9 @@ nav a:hover{
     font-weight: 800;
     font-size: 24px;
     color: #cba135;
-   
+    margin-top: 55px;
     align-items: center;
+
 }
 
 .categories {
@@ -215,6 +221,36 @@ padding-top: 3rem;
     color: #333333;
 }
 /* category end */
+/* most start */
+
+
+.swipermost {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+ .swipermost-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+.swipermost-slide img {
+    display: block;
+    width: 100%;
+
+
+  }
+
+/* most end */
+
+
+
+
+
+
 
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
@@ -244,6 +280,14 @@ padding-top: 3rem;
         row-gap: 1rem;
 
     }
+    
+.swiper {
+    max-width: 400px;
+    max-height: 500px;
+    margin-top: 35px;
+   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.33);
+   border: 2px solid #007B6E;
+} 
 }
 /*tablet responsive*/
 @media(max-width: 768px){
@@ -251,6 +295,7 @@ padding-top: 3rem;
         grid-template-columns: 1fr;
         row-gap: 3rem;
     }
+
 }
 /*mobile responsive*/
 
