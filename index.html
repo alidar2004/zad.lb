@@ -8,9 +8,7 @@
      <!--fontawesome-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Link Swiper's CSS -->
+   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -22,7 +20,7 @@
           <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li >     
             <li><a href="index.html">الرئسية</a></li>
-            <li><a href="most.html">الاكثر شعبية</a></li>
+            <li><a href="#most">الاكثر شعبية</a></li>
             <li><a href="category1.html">التصنيفات</a></li>
             <li><a href="item.html">المنتجات</a></li>
             <li><a href="#cart">سلة المشتريات</a></li>
@@ -32,7 +30,7 @@
           </ul>
           <ul class="mainbar">
             <li id="show"><a href="index.html">الرئسية</a></li>
-            <li id="show"><a href="most.html">الاكثر شعبية</a></li>
+            <li id="show"><a href="#most">الاكثر شعبية</a></li>
             <li id="show"><a href="category1.html">التصنيفات</a></li>
             <li id="show"><a href="item.html">المنتجات</a></li>
             <li id="show"><a href="contact.html">للتواصل</a></li>
@@ -123,49 +121,41 @@
         </div>
     </div>
 </div>
-
-<div class="cantainer">
-<h2 id="#most">الاكثرشعبية</h2>
-
- <!-- Swiper -->
- <div class="swipermost mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swipermost-slide">
-        <img src="img/most1.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most2.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most3.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most4.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most1.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most2.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most3.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most4.jpg" />
-      </div>
-      <div class="swipermost-slide">
-        <img src="img/most1.jpg" />
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-
-
-</div>
+<div class="showmore"><a href="category1.html">اضغط للمزيد</a></div>
 <!--category icons end-->
+<!--most start-->
+<div class="container1">
+    <h1 class="title">الأكثر شعبية</h1>
+    <hr>
+    <div class="product-grid">
+        <div class="product">
+            <img src="img/most1.jpg" alt="Product 1">
+            <p>سجادة</p>
+        </div>
+        <div class="product">
+            <img src="img/most2.jpg" alt="Product 2">
+            <p>محصول ۲</p>
+        </div>
+        <div class="product">
+            <img src="img/most4.jpg" alt="Product 3">
+            <p>محصول ۳</p>
+        </div>
+        <div class="product">
+            <img src="img/most1.jpg" alt="Product 4">
+            <p>محصول ۴</p>
+        </div>
+        <div class="product">
+            <img src="img/most2.jpg" alt="Product 5">
+            <p>محصول ۵</p>
+        </div>
+        <div class="product">
+            <img src="img/most3.jpg" alt="Product 6">
+            <p>محصول ۶</p>
+        </div>
+    </div>
+</div>
 
+<!--most end-->
 
 
 
@@ -182,6 +172,35 @@
 
 
 
+ <!-- Footer Start -->
+<!-- Footer Start -->
+<footer id="footer" style="background-color: #000; color: #fff; padding: 2rem 1rem; text-align: center; font-family: 'Poppins', sans-serif;">
+    <div class="container">
+        <!-- Contact Information -->
+        <div class="footer-contact" style="margin-bottom: 1rem;">
+            <p style="margin: 0; font-size: 1rem; font-weight: bold;">متجر زاد الإلكتروني</p>
+            <p style="margin: 0; font-size: 0.9rem;">للتواصل: 81942346</p>
+        </div>
+
+        <!-- Divider Line -->
+        <hr style="width: 50%; margin: 1rem auto; border: none; border-top: 1px solid #444;">
+
+        <!-- Copyright -->
+        <div class="footer-copyright" style="font-size: 0.8rem; color: #aaa;">
+            <p> Done By <span style="font-weight: bold; color: #00FFFF;">!WebSters!</span></p>
+            <p style="margin: 0; font-size: 0.9rem;"> 03/603294 - 70/698120</p>
+            <p>&copy; 2025! جميع الحقوق محفوظة</p>
+        </div>
+
+        <!-- Scroll to Top -->
+        <a href="#home" class="scrollup" style="display: inline-block; margin-top: 1rem; text-decoration: none; color: #00FFFF; font-size: 1.5rem;">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Footer End -->
 
 
 </body>
