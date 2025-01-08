@@ -1,0 +1,405 @@
+:root {
+    --tittle:#cba135;
+    --tittle-shadow:#b39230;
+    --paragraph:#6f6f6f;
+    --paragraph-black:#5f5f5f;
+    --borders:#d4af91;
+    --gallery-back:#faf5ed;
+    --btns:#3c7573;
+    --btn-text:#ffffff;
+    --btn-hovver:#e0c28f;
+    --lines:#8e9775;
+    --sidebar:#3c75733f;;
+ 
+ 
+ }
+/* القاعدة الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'GE-SS';
+}
+
+/* لون الخلفية الأساسية */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#fff;
+    color: #eee;
+}
+
+/* لون الخلفيات الثانوية */
+.section-secondary {
+    background-color: #F8F2EC;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    max-width: 120px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    font-size: 20px;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--btns);
+    font-weight: 900 bold;
+    border-bottom: 1px solid #007B6E;
+
+}
+nav a:hover{
+    border-bottom: 1px solid var(--borders);
+    text-shadow: 1px 1px 1px var(--tittle-shadow);
+
+
+}
+.sidebar{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1210;
+    background-color: var(--sidebar);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#menu{
+    display: none;
+}
+.sidebar li , .sidebar a{
+    width: 100%;
+
+}
+/* حاوية العرض */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+/* عرض الصفوف */
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* الأعمدة */
+.row section.col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* الأعمدة اليسرى */
+.row section.left {
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+}
+
+/* الأعمدة اليمنى */
+.row section.right {
+    flex-basis: 60%;
+}
+
+/* عنوان الاتصالات */
+section.left .contactTitle h2 {
+    position: relative;
+    font-size: 28px;
+    color: #3c7573;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px #3c7573;
+}
+
+section.left .contactTitle h2::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #888;
+    top: 120%;
+    left: 0;
+}
+
+section.left .contactTitle h2::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background-color: #3c7573;
+    top: calc(120% - 1px);
+    left: 0;
+}
+
+section.left .contactTitle p {
+    font-size: 17px;
+    color: #04726e;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 22px; 
+}
+
+/* معلومات الاتصال */
+section.left .Contactinfo {
+    margin-bottom: 16px;
+}
+
+.Contactinfo .Icongroup {
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.Icongroup .Icon {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #3c7573;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.Icongroup .Icon i {
+    font-size: 20px;
+    color: var(--btns);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Icongroup .Details span {
+    display: block;
+    color: #04726e;
+    font-size: 18px;
+}
+
+.Icongroup .Details span:nth-child(1) {
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+/* وسائل التواصل الاجتماعي */
+section.left .Socailmedia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 22px 0px 20px;
+}
+
+.Socailmedia a {
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: #04726e;
+    transition: 0.4s;
+}
+
+.Socailmedia a i {
+    color: #faf5ed;
+    font-size: 18px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    transition-delay: 0.4s; 
+    transition: 0.4s; 
+}
+
+.Socailmedia a:hover {
+    transform: translateY(-5px);
+    background-color: #00fff769;
+    color: #3c7573;
+    border: 1px solid var(--sidebar);
+}
+
+.Socailmedia a:hover i {
+    color: #04726e;
+}
+
+/* نموذج الرسائل */
+.row section.right .messageform {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.row section.right .inputgroup {
+    margin: 18px 0px;
+    position: relative;
+}
+
+.messageform .halfwidth {
+    flex-basis: 48%;
+}
+
+.messageform .fullwidth {
+    flex-basis: 100%;
+}
+
+.messageform input, .messageform textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 0px;
+    background-color: #2e2e2e00;
+    color: #ddd;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+
+.messageform textarea {
+    resize: none;
+    height: 220px;
+    display: block;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #3c7573;
+    border-radius: 15px;
+}
+
+.inputgroup label {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    color: #04726e;
+    font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.inputgroup label:nth-child(4) label {
+    top: 2px;
+}
+
+.inputgroup input:focus ~ label, .inputgroup textarea:focus ~ label,
+.inputgroup input:valid ~ label, .inputgroup textarea:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.inputgroup button {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #3c7573;
+    color: #ddd;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+.inputgroup button:hover {
+    background-color: #00fff769;
+    color: #3c7573;
+    border: 1px solid var(--sidebar);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*footer start*/
+footer{
+    background-color: #000;
+}
+#footer {
+    font-size: 14px;
+  
+}
+
+#footer a.scrollup:hover {
+    color: #005f5f;
+}
+
+
+
+/*footer end*/
+/* استجابة لجهاز العرض */
+@media (max-width: 1100px) {
+    .messageform .halfwidth {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container .row {
+        flex-wrap: wrap;
+    }
+    
+    .row section.left, .row section.right {
+        flex-basis: 100%;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+    #show{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        margin-right: 30px;
+    }
+    .thumbnail{
+        display: none;
+    }
+}
